@@ -35,15 +35,7 @@ Built with **SOLID** and **Clean Code** principles, the architecture focuses on 
 ---
 
 ## 💎 UI/UX & Data Features
-
-### 🎨 Enterprise Soft-Blue Theme
-* Utilizes `gr.themes.Soft(primary_hue="blue")` for a professional, modern look tailored for academic presentations and Master's thesis reports.
-
-### 📥 Professional Data Export
 * **Download Component:** A dedicated `gr.DownloadButton` that generates a physical `transformation_result.json` file only after successful processing.
-* **Dynamic UI Clearing:** Implements event chaining to reset output views and hide old results immediately when a new process starts, preventing visual clutter.
-
-### ⏱️ Performance & Progress
 * **Clean Timer:** A minimal, limit-less progress tracker that accurately measures model inference and data processing speed.
 
 ---
@@ -71,6 +63,4 @@ Built with **SOLID** and **Clean Code** principles, the architecture focuses on 
 * **AI Providers:** OpenAI API & Ollama (Local)
 * **File Processing:** OpenPyXL & xlrd (for .xlsx and .xls)
 * **Logging:** Python Standard Logging Library
-
 ---
-*Developed for Master's Level Academic Portfolio & GIS Integration Studies.*

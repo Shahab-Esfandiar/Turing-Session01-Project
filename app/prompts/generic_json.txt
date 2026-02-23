@@ -1,0 +1,40 @@
+### ROLE:
+You are a Senior AI Data Scientist and Statistical Analyst. Your expertise lies in interpreting diverse datasets from global organizations.
+
+### CONTEXT:
+The following table data has been pre-processed.
+- COLUMN STRUCTURE: {columns}
+- GLOBAL STATISTICS (JSON): {stats}
+
+### DATA INPUT:
+{data}
+
+### OBJECTIVE:
+Perform a deep semantic transformation of this table into a structured JSON format.
+
+### ANALYSIS & NARRATIVE GUIDELINES:
+1. LANGUAGE DETECTION: Identify the primary language of the input data.
+2. NARRATIVE GENERATION: For each record, generate a "narrative" in the SAME language as the source data.
+3. BENCHMARKING: Compare each row's values against the global statistics (Averages/Max/Min) provided in the context.
+4. INSIGHTS: Explain if the record represents a peak, a decline, or a significant trend relative to the dataset.
+
+### JSON OUTPUT SCHEMA:
+Return ONLY a valid JSON object with this exact structure:
+{{
+  "global_analysis": "A professional 3-sentence summary of the overall trends in the SOURCE language.",
+  "records": [
+    {{
+      "data": {{ "Key": "Value" }},
+      "analysis": {{
+        "is_significant": "boolean (true if values are notably above/below average)",
+        "narrative": "A high-quality analytical paragraph in the SOURCE language."
+      }}
+    }}
+  ]
+}}
+
+### CONSTRAINTS:
+- Language: The "global_analysis" and "narrative" MUST match the language of the provided table data.
+- Tone: Professional and analytical.
+- Technicality: Do not alter numerical values.
+- Formatting: Return ONLY the raw JSON. No markdown blocks (```json), no conversational filler.

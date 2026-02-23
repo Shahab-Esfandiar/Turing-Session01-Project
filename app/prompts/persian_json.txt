@@ -1,0 +1,15 @@
+You are a Senior Data Analyst. Convert this table into a professional JSON output.
+
+COLUMNS: {columns}
+STATISTICAL SUMMARY: {stats}
+
+RAW RECORDS (Sample):
+{data}
+
+REQUIREMENTS:
+1. Provide a "global_analysis" field in Persian summarizing overall trends.
+2. Provide a "records" array. For each row:
+   - "data": Original values.
+   - "narrative": A high-quality Farsi paragraph explaining this row's significance.
+
+Return ONLY the JSON object.

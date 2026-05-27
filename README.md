@@ -3,7 +3,7 @@
 
 <img width="1909" height="899" alt="image" src="https://github.com/user-attachments/assets/49b61159-0b29-4300-9870-f07d0c35e18c" />
 
-This project is a high-performance data engineering tool designed to convert messy, irregular Excel and CSV tables into structured, context-aware JSON. It bridges the gap between raw data and AI analysis by implementing sophisticated hierarchical cleaning before LLM processing.
+This project is a tool designed to convert messy, irregular Excel and CSV tables into structured, context-aware JSON. It bridges the gap between raw data and AI analysis by implementing sophisticated hierarchical cleaning before LLM processing.
 
 ---
 
